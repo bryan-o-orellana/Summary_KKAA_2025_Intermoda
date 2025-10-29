@@ -36,7 +36,7 @@ Each file provides specific documentation or visual reference for the **Summary_
 - `Inventario Card`
 >
 **# 1. `Indicador Inventario`**
-```DAX
+
 Indicador Inventario = 
 VAR Meses = [Meses Inventario Promedio]
 RETURN
