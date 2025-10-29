@@ -36,7 +36,7 @@ Each file provides specific documentation or visual reference for the **Summary_
 - `Inventario Card`
 >
 **# 1. `Indicador Inventario`**
-<details>
+
 ```DAX
 Indicador Inventario = 
 VAR Meses = [Meses Inventario Promedio]
@@ -48,7 +48,7 @@ SWITCH(
     Meses > 5, " ⬇️",
     "⚪"  -- If no data
 )
-</details>
+```
 Description:
 Assigns an inventory indicator icon based on the average months of inventory:
 
@@ -61,7 +61,7 @@ Assigns an inventory indicator icon based on the average months of inventory:
 ⚪ if there is no data
 
 **# 2.`Inventario Card`**
-<details>
+
 ```DAX
 Inventario Card = 
 VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
@@ -70,7 +70,7 @@ VAR Indicador = [Indicador Inventario]
 RETURN
 "Costo total: " & Costo & UNICHAR(10) & 
 "Meses de inventario: " & Meses & " " & Indicador
-</details>
+```
 ---
 
 ## 🧰 Tools & Technologies
