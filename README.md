@@ -1,11 +1,11 @@
 # Key Accounts Summary: Sell-Out & Inventory 2025
 
 > A **Power BI project** for visualizing **key accounts performance** with a focus on **sell-out data** and **inventory metrics** for 2025.  
-> Developed as a **real professional project** for actionable insights.
+> Developed as a **real professional project** for actionable insights in a visually intuitive manner.
 
-This repository contains a **Power BI project** for summarizing key accounts performance, focusing on **sell-out data and inventory metrics** for 2025. This project was developed for a real work scenario, aiming to provide insights into inventory levels and costs in a visually intuitive manner.
 >
 Preview:
+>
 ![PDF Preview](./Performance_KKAA/Preview.png)
 
 
