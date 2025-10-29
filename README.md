@@ -4,9 +4,6 @@
 > Developed as a **real professional project** for actionable insights in a visually intuitive manner.
 
 >
-Preview:
->
-![PDF Preview](./Performance_KKAA/Preview.png)
 
 
 > ⚠️ **Note:** The full data model and additional measures are **proprietary and confidential**, and are not included in this repository.
@@ -20,6 +17,9 @@ This repository includes:
   ✅ **Theme.json** 
 - ✅ **PDF summary report** for easy sharing  
 
+Preview:
+>
+![PDF Preview](./Performance_KKAA/Preview.png)
 
 
 ## Included Measures (DAX)
@@ -49,10 +49,8 @@ Assigns an inventory indicator icon based on the average months of inventory:
 
 ⚪ if there is no data
 
-
-
-
-### 2️. `Inventario Card`
+### 2. `Inventario Card`
+-
 ```DAX 
 Inventario Card = 
 VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
@@ -61,15 +59,13 @@ VAR Indicador = [Indicador Inventario]
 RETURN
 "Costo total: " & Costo & UNICHAR(10) & 
 "Meses de inventario: " & Meses & " " & Indicador
-
 ---
 PDF Report: 
 >
-
 A PDF summary report has been included in the repository:
 Resumen KKAA 2025
 Download Resumen KKAA 2025
-[📥 Download Full PDF](./Performance_KKAA/resumen_kkaa_2025.pdf)
+[📥Download Report (PDF)]![Full report - 2 pages](./Performance_KKAA/resumen_kkaa_2025.pdf)
 >
 Contact me: ![LinkedIn] (https://linkedin.com/in/bryanxavez)
 
