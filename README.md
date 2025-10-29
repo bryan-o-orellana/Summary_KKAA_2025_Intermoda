@@ -86,7 +86,7 @@ RETURN
 
 
 ## 📄 Report File
-[📥 Download Report (PDF)](./Summary_KKAA_2025_Intermoda/Resumen_KKAA.pdf)
+[📥 Download Report (PDF)](./Performance_KKAA/Resumen_KKAA.pdf)
 
 ## 💬 Author
 **Bryan Odair Orellana Chávez**  
@@ -95,12 +95,13 @@ Business Intelligence & Data Analysis
 ![🔗 Contact me on LinkedIn](https://www.linkedin.com/in/bryanxavez)
 
 ## 📄 Design reference
-[📥 Image of reference)](./Summary_KKAA_2025_Intermoda/Reference.pdf)
----
+[📥 Image of reference)](./Performance_KKAA/Reference.pdf) 
+>I used this pic as a reference for my design :)
+
 License / Disclaimer
 
 This project is intended for internal professional use. Data and full model structures are confidential and proprietary to the company Intermoda .S.A.
----
+
 ## 🏷️ Tags
 `#PowerBI` `#DAX` `#BusinessIntelligence` `#DataAnalytics` `#SQLServer`
 
