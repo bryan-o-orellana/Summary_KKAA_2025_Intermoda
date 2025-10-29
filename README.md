@@ -57,8 +57,6 @@ Assigns an inventory indicator icon based on the average months of inventory:
 ⬇️ for more than 5 months
 
 ⚪ if there is no data
-DAX```
----
 
 **# 2.`Inventario Card`**
 
@@ -88,7 +86,7 @@ RETURN
 
 
 ## 📄 Report File
-[📥 Download Report (PDF)](./Summary_KKAA_2025_Intermoda/resumen_kkaa_2025.pdf)
+[📥 Download Report (PDF)](./Summary_KKAA_2025_Intermoda/Resumen_KKAA.pdf)
 
 ## 💬 Author
 **Bryan Odair Orellana Chávez**  
