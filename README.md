@@ -4,6 +4,9 @@
 > Developed as a **real professional project** for actionable insights in a visually intuitive manner.
 
 >
+Preview:
+>
+![PDF Preview](./Performance_KKAA/Preview.png)
 
 
 > ⚠️ **Note:** The full data model and additional measures are **proprietary and confidential**, and are not included in this repository.
@@ -17,18 +20,13 @@ This repository includes:
   ✅ **Theme.json** 
 - ✅ **PDF summary report** for easy sharing  
 
-Preview:
->
-![PDF Preview](./Performance_KKAA/Preview.png)
 
 
-## 🛠 Measures (DAX)
+## Included Measures (DAX)
 
----
+Below are two key measures implemented in this project:
 
-<details>
-  <summary>**1️⃣ Indicador Inventario**</summary>
-
+### 1. `Indicador Inventario`
 ```DAX
 Indicador Inventario = 
 VAR Meses = [Meses Inventario Promedio]
@@ -43,18 +41,16 @@ SWITCH(
 Description:
 Assigns an inventory indicator icon based on the average months of inventory:
 
-➡️ → 0–3 months
+➡️ for 0–3 months
 
-⬆️ → 3–5 months
+⬆️ for 3–5 months
 
-⬇️ → More than 5 months
+⬇️ for more than 5 months
 
-⚪ → No data available
+⚪ if there is no data
 
-</details>
-<details> <summary>**2️⃣ Inventario Card**</summary>
-DAX
-Copiar código
+### 2️. **`Inventario Card`**
+```DAX 
 Inventario Card = 
 VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
 VAR Meses = FORMAT([Meses Inventario Promedio],"0.0")
@@ -62,28 +58,25 @@ VAR Indicador = [Indicador Inventario]
 RETURN
 "Costo total: " & Costo & UNICHAR(10) & 
 "Meses de inventario: " & Meses & " " & Indicador
-Description:
-Creates a summary card combining:
 
-Total inventory cost (in millions)
+---
+PDF Report: 
+>
 
-Average months of inventory
+A PDF summary report has been included in the repository:
+Resumen KKAA 2025
+Download Resumen KKAA 2025
 
-Inventory indicator
+![📥 Download Full PDF](./Performance_KKAA/resumen_kkaa_2025.pdf)
+>
+Contact me: ![LinkedIn] (https://linkedin.com/in/bryanxavez)
 
-This measure provides a quick overview of inventory health at a glance.
+This report visualizes key metrics and insights derived from the Power BI model for Intermoda S.A. Honduras.
 
-</details>
-📄 PDF Report
+License / Disclaimer
 
-Download the full PDF report here:
-📥 Download Resumen KKAA 2025
+This project is intended for internal professional use. Data and full model structures are confidential and proprietary to the company.
 
-🔗 Connect with Me
-
-🔒 License / Disclaimer
-This project is intended for internal professional use.
-Full data model, source data, and additional measures are confidential and proprietary to the company.
 
 
 
