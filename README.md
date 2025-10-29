@@ -21,7 +21,6 @@ This repository includes:
 - ✅ **PDF summary report** for easy sharing  
 
 
----
 
 ## Included Measures (DAX)
 
@@ -51,7 +50,9 @@ Assigns an inventory indicator icon based on the average months of inventory:
 ⚪ if there is no data
 
 
-### 2. `Inventario card`
+
+
+### 2️. `Inventario Card`
 ```DAX 
 Inventario Card = 
 VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
@@ -61,14 +62,15 @@ RETURN
 "Costo total: " & Costo & UNICHAR(10) & 
 "Meses de inventario: " & Meses & " " & Indicador
 
-
-PDF Report: [📥 Download Full PDF](./Performance_KKAA/Resumen_KKAA.pdf)
+---
+PDF Report: 
+>
 
 A PDF summary report has been included in the repository:
 Resumen KKAA 2025
-You can download the full PDF report here:
 Download Resumen KKAA 2025
-
+[📥 Download Full PDF](./Performance_KKAA/resumen_kkaa_2025.pdf)
+>
 Contact me: ![LinkedIn] (https://linkedin.com/in/bryanxavez)
 
 This report visualizes key metrics and insights derived from the Power BI model.
