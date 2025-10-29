@@ -4,7 +4,8 @@
 > Developed as a **real professional project** for actionable insights.
 
 This repository contains a **Power BI project** for summarizing key accounts performance, focusing on **sell-out data and inventory metrics** for 2025. This project was developed for a real work scenario, aiming to provide insights into inventory levels and costs in a visually intuitive manner.
-
+>
+Preview:
 ![PDF Preview](./Performance_KKAA/Preview.png)
 
 
@@ -19,7 +20,6 @@ This repository includes:
   ✅ **Theme.json** 
 - ✅ **PDF summary report** for easy sharing  
 
-> ⚠️ **Note:** The full data model and additional measures are **proprietary and confidential**.
 
 ---
 
@@ -50,6 +50,9 @@ Assigns an inventory indicator icon based on the average months of inventory:
 
 ⚪ if there is no data
 
+
+### 2. `Inventario card`
+```DAX 
 Inventario Card = 
 VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
 VAR Meses = FORMAT([Meses Inventario Promedio],"0.0")
