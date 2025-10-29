@@ -29,7 +29,7 @@ Each file provides specific documentation or visual reference for the **Summary_
 ---
 ## 📊 Preview
 >
-![PDF Preview](./Performance_KKAA/Preview.png)
+<img width="487" height="397" alt="1"> ![PDF Preview](./Performance_KKAA/Preview.png)</img>
 
 ---
 ## 🧮 Main DAX Measures
@@ -88,7 +88,7 @@ RETURN
 ---
 
 ## 📄 Report File
-📥 [Download Report (PDF)]![Full report - 2 pages](./Performance_KKAA/resumen_kkaa_2025.pdf)
+📥 [Download Report (PDF)]![Full report - 2 pages](./Summary_KKAA_2025_Intermoda/resumen_kkaa_2025.pdf)
 
 ---
 
