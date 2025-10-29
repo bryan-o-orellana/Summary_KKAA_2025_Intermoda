@@ -1,14 +1,14 @@
 
-## 🧠 Key Accounts Summary: Sell-Out & Inventory 2025
+## 🧠 Key Accounts Summary: Sell-Out & Inventory 2025 for Intermoda S.A.
 
 > A **Power BI project** for visualizing **key accounts performance** with a focus on **sell-out data** and **inventory metrics** for 2025.  
-> Developed as a **real professional project** for actionable insights in a visually intuitive manner.
+> Developed as a **real professional project FOR Intermoda S.A.** for actionable insights in a visually intuitive manner.
 
 ---
 
 ## 🗂️ Project Overview
 This project presents a detailed overview of **Key Account (KKAA) clients**, highlighting:
-- **Sell-out sales summary** (MTD & YTD)
+- **Sell-out sales summary**
 - **Inventory summary**
 
 ---
@@ -16,13 +16,12 @@ This project presents a detailed overview of **Key Account (KKAA) clients**, hig
 
 The repository is organized as follows:
 
-/Summary_KKAA_2025_Intermoda
-
-- ✅ **Key Inventory Indicators**  
-- ✅ **Inventory Cost Summary Cards**  
+/Performance_KKAA
+- ✅ **Preview.png**  
+- ✅ **Reference.png**  
 - ✅ **Theme.json**
 - ✅ **jpg image reference** 
-- ✅ **PDF summary report** for easy sharing
+- ✅ **Resumen_KKAA (PDF summary report)** for easy sharing
 
 Each file provides specific documentation or visual reference for the **Summary_KKAA_2025_Intermoda** Business Intelligence project.
 
@@ -36,8 +35,8 @@ Each file provides specific documentation or visual reference for the **Summary_
 - `Indicador Inventario`  
 - `Inventario Card`
 >
-```DAX
 **# 1. `Indicador Inventario`**
+```DAX
 Indicador Inventario = 
 VAR Meses = [Meses Inventario Promedio]
 RETURN
@@ -58,11 +57,11 @@ Assigns an inventory indicator icon based on the average months of inventory:
 ⬇️ for more than 5 months
 
 ⚪ if there is no data
-
+DAX```
 ---
 
 **# 2.`Inventario Card`**
-```DAX 
+
 Inventario Card = 
 VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
 VAR Meses = FORMAT([Meses Inventario Promedio],"0.0")
@@ -87,22 +86,22 @@ RETURN
 - Internal **OLAP Cubes**
 - Extracted and modeled in **Power Query**
 
----
 
 ## 📄 Report File
-📥 [Download Report (PDF)]![Full report - 2 pages](./Summary_KKAA_2025_Intermoda/resumen_kkaa_2025.pdf)
-
----
+[📥 Download Report (PDF)](./Summary_KKAA_2025_Intermoda/resumen_kkaa_2025.pdf)
 
 ## 💬 Author
 **Bryan Odair Orellana Chávez**  
 Business Intelligence & Data Analysis  
-📧 [Contact me on LinkedIn](https://www.linkedin.com/in/bryanxavez)
 
+![🔗 Contact me on LinkedIn](https://www.linkedin.com/in/bryanxavez)
+
+## 📄 Design reference
+[📥 Image of reference)](./Summary_KKAA_2025_Intermoda/Reference.pdf)
 ---
 License / Disclaimer
 
-This project is intended for internal professional use. Data and full model structures are confidential and proprietary to the company.
+This project is intended for internal professional use. Data and full model structures are confidential and proprietary to the company Intermoda .S.A.
 ---
 ## 🏷️ Tags
 `#PowerBI` `#DAX` `#BusinessIntelligence` `#DataAnalytics` `#SQLServer`
