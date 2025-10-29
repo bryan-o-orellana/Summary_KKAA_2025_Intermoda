@@ -28,7 +28,7 @@ Each file provides specific documentation or visual reference for the **Summary_
 ---
 ## 📊 Preview
 >
->![PDF Preview](./Performance_KKAA/Preview.png)
+<img width="487" height="397" alt="1" src="https://github.com/bryan-o-orellana/Summary_KKAA_2025_Intermoda/blob/main/Performance_KKAA/Preview.png?raw=true" />
 
 ---
 ## 🧮 Main DAX Measures
