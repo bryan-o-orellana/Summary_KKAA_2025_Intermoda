@@ -1,31 +1,42 @@
-# Key Accounts Summary: Sell-Out & Inventory 2025
+
+## 🧠 Key Accounts Summary: Sell-Out & Inventory 2025
 
 > A **Power BI project** for visualizing **key accounts performance** with a focus on **sell-out data** and **inventory metrics** for 2025.  
 > Developed as a **real professional project** for actionable insights in a visually intuitive manner.
 
->
-Preview:
->
-![PDF Preview](./Performance_KKAA/Preview.png)
+---
 
+## 🗂️ Project Overview
+This project presents a detailed overview of **Key Account (KKAA) clients**, highlighting:
+- **Sell-out sales summary** (MTD & YTD)
+- **Inventory summary**
 
-> ⚠️ **Note:** The full data model and additional measures are **proprietary and confidential**, and are not included in this repository.
+---
+## 🗂️ Project Structure
 
-## 📝 Project Overview
+The repository is organized as follows:
 
-This repository includes:
+/Summary_KKAA_2025_Intermoda
 
 - ✅ **Key Inventory Indicators**  
 - ✅ **Inventory Cost Summary Cards**  
-  ✅ **Theme.json** 
-- ✅ **PDF summary report** for easy sharing  
+- ✅ **Theme.json**
+- ✅ **jpg image reference** 
+- ✅ **PDF summary report** for easy sharing
 
+Each file provides specific documentation or visual reference for the **Summary_KKAA_2025_Intermoda** Business Intelligence project.
 
+---
+## 📊 Preview
+>
+![PDF Preview](./Performance_KKAA/Preview.png)
 
-## Included Measures (DAX)
+---
 
-Below are two key measures implemented in this project:
-
+## 🧮 Main DAX Measures
+- `Indicador Inventario`  
+- `Inventario Card`
+>
 ### 1. `Indicador Inventario`
 ```DAX
 Indicador Inventario = 
@@ -48,36 +59,44 @@ Assigns an inventory indicator icon based on the average months of inventory:
 ⬇️ for more than 5 months
 
 ⚪ if there is no data
-
-### 2️. **`Inventario Card`**
-```DAX 
-Inventario Card = 
-VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
-VAR Meses = FORMAT([Meses Inventario Promedio],"0.0")
-VAR Indicador = [Indicador Inventario]
-RETURN
-"Costo total: " & Costo & UNICHAR(10) & 
-"Meses de inventario: " & Meses & " " & Indicador
+>
+---
+### 2️.`Inventario Card`
+> See the file (./MEDIDAS DAX.md) for details.
 
 ---
-PDF Report: 
->
 
-A PDF summary report has been included in the repository:
-Resumen KKAA 2025
-Download Resumen KKAA 2025
+## 🧰 Tools & Technologies
+| Tool | Purpose |
+|------|----------|
+| **Power BI Desktop (Sept 2025)** | Report creation |
+| **DAX Studio** | Measure validation |
+| **SQL Server** | Data source |
+| **GitHub** | Version control |
 
-![📥 Download Full PDF](./Performance_KKAA/resumen_kkaa_2025.pdf)
->
-Contact me: ![LinkedIn] (https://linkedin.com/in/bryanxavez)
+---
 
-This report visualizes key metrics and insights derived from the Power BI model for Intermoda S.A. Honduras.
+## 🗃️ Data Sources
+- Internal **OLAP Cubes**
+- Extracted and modeled in **Power Query**
 
+---
+
+## 📄 Report File
+📥 [Download Report (PDF)]![Full report - 2 pages](./Performance_KKAA/resumen_kkaa_2025.pdf)
+
+---
+
+## 💬 Author
+**Bryan Odair Orellana Chávez**  
+Business Intelligence & Data Analysis  
+📧 [Contact me on LinkedIn](https://www.linkedin.com/in/bryanxavez)
+
+---
 License / Disclaimer
 
 This project is intended for internal professional use. Data and full model structures are confidential and proprietary to the company.
-
-
-
-
+---
+## 🏷️ Tags
+`#PowerBI` `#DAX` `#BusinessIntelligence` `#DataAnalytics` `#SQLServer`
 
