@@ -32,7 +32,6 @@ Each file provides specific documentation or visual reference for the **Summary_
 ![PDF Preview](./Performance_KKAA/Preview.png)
 
 ---
-
 ## 🧮 Main DAX Measures
 - `Indicador Inventario`  
 - `Inventario Card`
@@ -59,12 +58,18 @@ Assigns an inventory indicator icon based on the average months of inventory:
 ⬇️ for more than 5 months
 
 ⚪ if there is no data
->
----
-### 2️.`Inventario Card`
-> See the file (./MEDIDAS DAX.md) for details.
+>>------------------
 
----
+### 2.`Inventario Card`
+```DAX 
+Inventario Card = 
+VAR Costo = FORMAT(DIVIDE([Costo Total Inventario],1000000),"0.0") & " mill"
+VAR Meses = FORMAT([Meses Inventario Promedio],"0.0")
+VAR Indicador = [Indicador Inventario]
+RETURN
+"Costo total: " & Costo & UNICHAR(10) & 
+"Meses de inventario: " & Meses & " " & Indicador
+>>---
 
 ## 🧰 Tools & Technologies
 | Tool | Purpose |
